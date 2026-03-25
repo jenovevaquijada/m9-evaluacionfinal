@@ -19,6 +19,14 @@ Este es un proyecto de tienda virtual desarrollado con una arquitectura robusta,
 * **Autenticación Protegida:** Rutas de compra protegidas por middleware que verifica el token del usuario.
 * **Interfaz Responsiva:** Diseño limpio y alineado mediante CSS Grid, optimizado para la experiencia del usuario.
 
+## 🆙 Actualizaciones respecto a la entrega del Módulo 8
+* Transacciones SQL: Implementación de transacciones atómicas para asegurar que el stock se descuente solo si el pago es procesado exitosamente.
+* Historial de Compras: "Nueva vista dinámica para que los usuarios registrados consulten su actividad histórica."
+* Arquitectura MVC: "Migración de un servidor plano a una estructura de carpetas profesional (Routes, Controllers, Config)."
+* Feedback en tiempo real: Uso de Toasts para confirmar acciones.
+* Estados de Carga: Botones que cambian a "Procesando..." para evitar errores del usuario.
+* Validaciones: Formit de login con validación de campos vacíos y formato de correo.
+
 ## 🏗️ Arquitectura del Proyecto (MVC)
 
 El proyecto sigue el patrón **Modelo-Vista-Controlador** para asegurar la escalabilidad:
