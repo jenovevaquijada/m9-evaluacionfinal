@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Tienda</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <h1 style="margin: 0; font-size: 1.5em;">🚀 Mi Tienda</h1>
+        <div id="auth-section">
+            <div id="login-form">
+                <input type="email" id="login-email" placeholder="Email" style="padding: 8px; border-radius: 4px; border: none;">
+                <input type="password" id="login-password" placeholder="Clave" style="padding: 8px; border-radius: 4px; border: none; width: 100px;">
+                <button onclick="ejecutarLogin()" style="background: #27ae60; color: white; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; font-weight: bold;">Entrar</button>
+            </div>
+            <div id="user-logged" style="display: none;">
+                <span id="user-name"></span>
+                <button onclick="logout()" style="background: #e74c3c; color: white; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; margin-left: 10px;">Salir</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <h2>📦 Catálogo de Productos</h2>
+        <div id="productos" class="card-container"></div>
+        <hr>
+        <h2>📜 Historial de Ventas</h2>
+        <div id="historial"></div>
+    </div>
+
+    <div class="cart-panel">
+        <h3>🛒 Carrito de Compras</h3>
+        <div id="items-carrito" style="margin-top: 15px;"></div>
+        <div id="totales" style="border-top: 2px solid #f4f7f6; margin-top: 15px; padding-top: 15px; font-size: 1.2em;">
+            <strong>Total: $0</strong>
+        </div>
+        <button class="btn-buy" onclick="comprar()">Comprar ahora</button>
+        <p id="msg-auth" style="color: #e74c3c; font-size: 0.8em; margin-top: 10px; display: none;">
+            * Debes iniciar sesión para comprar.
+        </p>
+    </div>
+    <div id="toast-container" style="position: fixed; top: 20px; right: 20px; z-index: 1000;"></div>
+   
+    <script src="js/script.js"></script>
+</body>
+</html>
